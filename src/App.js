@@ -1,6 +1,8 @@
-import logo from './logo.svg';
+
 import './App.css';
 import CardGroup from './Component/CardGroup/CardGroup';
+import { Button, Spinner } from 'react-bootstrap';
+import GridCard from './Component/GridCard/GridCard';
 
 function App() {
   return (
@@ -17,6 +19,23 @@ function App() {
       <button type="button" className="btn btn-link">Link</button>
       <div className="spinner-border text-danger" role="status">
         <span className="visually-hidden">Loading...</span>
+      </div>
+      <button>Plain Button</button>
+      <Button>React Button</Button>
+      <Button variant='success'>React Button</Button>
+      <Button variant='info'>React Button</Button>
+      <div>
+      <Spinner animation="grow" variant="primary" />
+      <Spinner animation="grow" variant="secondary" />
+      <Spinner animation="grow" variant="success" />
+      <Spinner animation="grow" variant="danger" />
+      <Spinner animation="grow" variant="warning" />
+      <Spinner animation="grow" variant="info" />
+      <Spinner animation="grow" variant="light" />
+      <Spinner animation="grow" variant="dark" />
+      </div>
+      <div>
+        <GridCard></GridCard>
       </div>
     </div>
   );
